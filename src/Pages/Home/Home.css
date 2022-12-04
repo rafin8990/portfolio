@@ -1,0 +1,32 @@
+#btn{
+    border: 1px solid #006064;
+    display: block;
+    background: linear-gradient(to right, #006064 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+#btn:hover {
+    background-position: left bottom;
+  }
+#text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px; 
+    color: black;
+    transition: all .6s ease-out;
+    display: block;
+}
+#img{
+    width: 400px;
+    height: 400px;
+    border: 10px solid cyan;
+    border-radius: 250px;
+    
+}
+@media only screen and (max-width: 600px){
+    #img{
+        width: 300px;
+        border-radius: 150px;
+    }
+}
