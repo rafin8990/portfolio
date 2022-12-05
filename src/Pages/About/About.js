@@ -45,7 +45,7 @@ const About = () => {
                             <p><span className='text-xl font-bold'>Language</span>: English , Bangla</p>
                         </div>
                         <div id='btn' className='w-60 rounded-2xl mt-5 ml-5 md:ml-0'>
-                            <a href={resume} download="Rafin-resume.pdf">
+                            <a href='../../Assets/resume/Rafin-resume.pdf' download="Rafin-resume.pdf">
 
                                 <button id='text' >
                                     <div className='flex items-center'>

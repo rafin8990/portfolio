@@ -1,8 +1,7 @@
 import React from 'react';
 import profile from '../../Assets/profile.jpg'
 import './Home.css'
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { TbBrandGmail, TbFilePhone } from "react-icons/tb";
+import { HiArrowNarrowRight , HiMail, HiPhone} from "react-icons/hi";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
@@ -35,8 +34,8 @@ const Home = () => {
                         </button></Link>
                     </div>
                     <div className=' flex mt-5 '>
-                        <p className='text-4xl '> <a href="https://www.rafin.hossain.8990@gmail.com"><TbBrandGmail></TbBrandGmail></a></p>
-                        <p className='text-4xl ml-5'> <a href=" tel:+8801984419614"><TbFilePhone></TbFilePhone></a></p>
+                        <p className='text-4xl '> <a href="https://www.rafin.hossain.8990@gmail.com"><HiMail></HiMail></a></p>
+                        <p className='text-4xl ml-5'> <a href=" tel:+8801984419614"><HiPhone></HiPhone></a></p>
                         <p className='text-4xl ml-5'> <a href="https://www.facebook.com/Rafin.Hossain.19614/"><FaFacebook></FaFacebook></a></p>
                         <p className='text-4xl ml-5'> <a href="https://www.linkedin.com/in/rafin-hossain-005491245/"><FaLinkedin></FaLinkedin></a></p>
                         <p className='text-4xl ml-5'> <a href="https://github.com/rafin8990"><FaGithub></FaGithub></a></p>
