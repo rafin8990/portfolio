@@ -13,7 +13,7 @@ const Home = () => {
         <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
-            className='md:m-12 lg:m-40 min-h-screen '>
+            className='md:mx-12 lg:mx-48 lg:mt-40 min-h-screen '>
             <div className=' md:flex items-center'>
                 <div className='ml-5 md:ml-0 flex items-center'>
                     <div  className=' flex justify-center'>
