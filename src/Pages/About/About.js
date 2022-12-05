@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'
 import { HiArrowCircleDown } from "react-icons/hi";
+import resume from '../../Assets/resume/Rafin-resume.pdf'
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -44,13 +45,16 @@ const About = () => {
                             <p><span className='text-xl font-bold'>Language</span>: English , Bangla</p>
                         </div>
                         <div id='btn' className='w-60 rounded-2xl mt-5 ml-5 md:ml-0'>
-                            <button id='text' >
-                                <div className='flex items-center'>
-                                    <p className='mx-5'>DOWNLOAD RESUME</p>
-                                    <p className='bg-cyan-500 rounded-full text-xl'><HiArrowCircleDown></HiArrowCircleDown></p>
-                                </div>
+                            <a href={resume} download="Rafin-resume.pdf">
 
-                            </button>
+                                <button id='text' >
+                                    <div className='flex items-center'>
+                                        <p className='mx-5'>DOWNLOAD RESUME</p>
+                                        <p className='bg-cyan-500 rounded-full text-xl'><HiArrowCircleDown></HiArrowCircleDown></p>
+                                    </div>
+
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-5 mx-3 md:mx-0'>
