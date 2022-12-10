@@ -6,9 +6,9 @@ import photo3 from '../../../Assets/project/skillshop-academy.firebaseapp.com_.p
 
 const HomeProject = () => {
     return (
-        <div className='mt-20'>
+        <div className='mt-20 pb-10'>
             <h1 className='flex justify-center text-4xl font-bold underline'>Projects</h1>
-           <div className='pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+           <div className='pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 border border-cyan-900 mt-10 p-5 rounded-2xl '>
                 <motion.div initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }} className="hero border mt-20 shadow-2xl rounded-2xl ">
