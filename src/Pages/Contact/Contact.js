@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 import { FcReading, FcFaq, FcCallback } from "react-icons/fc";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -6,21 +7,21 @@ import './Contact.css'
 
 
 const Contact = () => {
-    const [submitted, setSubmitted] = useState(false);
-    const handleSubmit = () => {
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 100);
-    };
+    const form = useRef();
+    const sendEmail = (event) => {
+        event.preventDefault();
 
-    if (submitted) {
-        return (
-            <>
-                <div className="text-2xl">Thank you!</div>
-                <div className="text-md">I'll be in touch soon.</div>
-            </>
-        );
-    }
+        emailjs.sendForm('service_wyl3ziw', 'template_4turmyp', form.current, 'tGa-9wKkpA5EJKsaj')
+            .then((result) => {
+                console.log(result.text);
+                form.reset()
+                alert("SUCCESS!");
+
+            }, (error) => {
+                console.log(error.text);
+                alert("FAILED...", error);
+            });
+    };
     return (
         <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -70,19 +71,14 @@ const Contact = () => {
                 </div>
                 <div>
                     <div>
-                        <form
-                            action='https://public.herotofu.com/v1/01e4e570-7848-11ed-a126-b172cf164538'
-                            onSubmit={handleSubmit}
-                            method="POST"
-                            target="_blank"
-                        >
-                            <input type="text" placeholder="Your Name" required className="input input-bordered w-full mt-5" />
-                            <input type="text" placeholder="Your Email" required className="input input-bordered w-full mt-5" />
+                        <form ref={form} onSubmit={sendEmail}>
+                            <input type="text" placeholder="Your Name" name="user_name" required className="input input-bordered w-full mt-5" />
+                            <input type="text" placeholder="Your Email" name="user_email" required className="input input-bordered w-full mt-5" />
                             <input type="text" placeholder="Enter Your Subject" required className="input input-bordered w-full mt-5" />
-                            <textarea className="textarea textarea-bordered w-full mt-5" required placeholder="Text Here"></textarea>
+                            <textarea className="textarea textarea-bordered w-full mt-5" name="message" required placeholder="Text Here"></textarea>
 
                             <div id='btn' className='rounded-xl w-44 mt-5'>
-                                <button id='text'>
+                                <button id='text' type='submit' value="Send">
                                     <div className='flex items-center'>
                                         <p className='mx-5'>Send Message</p>
                                         <p className='bg-cyan-500 rounded-full '><HiArrowNarrowRight></HiArrowNarrowRight></p>

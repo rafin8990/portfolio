@@ -7,7 +7,7 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import HomeProject from './HomeProject/HomeProject';
-import resume from '../../Assets/resume/Resume 01.pdf'
+import resume from '../../Assets/resume/Resume-01.pdf'
 
 const Home = () => {
     return (
