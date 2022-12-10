@@ -81,7 +81,7 @@ const Project = () => {
                         <div className="card-actions">
                             <a href=" https://github.com/rafin8990/skillshop-academy-client"><button className="btn btn-sm">github client</button></a>
                             <a href=" https://github.com/rafin8990/skillshop-academy-server"><button className="btn btn-sm">Github Server</button></a>
-                            <a href=""><button className="btn btn-sm">live link</button></a>
+                            <a href="https://skillshop-academy.firebaseapp.com/"><button className="btn btn-sm">live link</button></a>
                         </div>
                     </div>
                 </div>

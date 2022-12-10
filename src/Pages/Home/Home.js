@@ -2,10 +2,12 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import profile from '../../Assets/profile.jpg'
 import './Home.css'
-import { HiArrowNarrowRight, HiMail, HiPhone } from "react-icons/hi";
+import { HiArrowNarrowRight, HiMail, HiPhone, HiArrowCircleDown } from "react-icons/hi";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
+import HomeProject from './HomeProject/HomeProject';
+import resume from '../../Assets/resume/Resume 01.pdf'
 
 const Home = () => {
     return (
@@ -31,6 +33,10 @@ const Home = () => {
                                 2000,
                                 'FULL STACK DEVELOPER',
                                 2000,
+                                'MERN STACK DEVELOPER',
+                                2000,
+                                'FRONTEND DEVELOPER',
+                                2000,
                             ]}
                             speed={50}
                             style={{ fontSize: '2em' }}
@@ -40,14 +46,28 @@ const Home = () => {
                     </div>
 
                     <p className='text-gray-500'>Hi , I’m Rafin Hossain. I’m a web developer living in Dhaka, Bangladesh. I am a fan of photography, technology, and programming. I’m also interested in web development. I'm familiar with a variety of programming languages, including JavaScript, HTML, CSS, React, Tailwind CSS, Bootstrap, Daisy UI, MaterialUI, ES6, NodeJS, ExpressJS , MongoDB. </p>
-                    <div id='btn' className=' rounded-3xl  w-44 mt-5'>
-                        <Link to='/about'><button id='text'>
-                            <div className='flex items-center'>
-                                <p className='mx-5'>More About Me</p>
-                                <p className='bg-cyan-500 rounded-full '><HiArrowNarrowRight></HiArrowNarrowRight></p>
-                            </div>
+                    <div className='flex flex-col md:flex-row'>
+                        <div id='btn' className=' rounded-3xl  w-44 mt-5'>
+                            <Link to='/about'><button id='text'>
+                                <div className='flex items-center'>
+                                    <p className='mx-5'>More About Me</p>
+                                    <p className='bg-cyan-500 rounded-full '><HiArrowNarrowRight></HiArrowNarrowRight></p>
+                                </div>
 
-                        </button></Link>
+                            </button></Link>
+                        </div>
+                        <div id='btn' className='w-60 rounded-2xl mt-5 ml-0 md:ml-5 '>
+                            <a href='../../Assets/resume/Resume 01.pdf' download="Resume 01.pdf">
+
+                                <button id='text' >
+                                    <div className='flex items-center'>
+                                        <p className='mx-5'>DOWNLOAD RESUME</p>
+                                        <p className='bg-cyan-500 rounded-full text-xl'><HiArrowCircleDown></HiArrowCircleDown></p>
+                                    </div>
+
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div className=' flex mt-5 '>
                         <p className='text-4xl '> <a href="https://www.rafin.hossain.8990@gmail.com"><HiMail></HiMail></a></p>
@@ -58,6 +78,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <HomeProject></HomeProject>
         </motion.div>
 
 

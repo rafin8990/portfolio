@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from "framer-motion"
 import { FcReading, FcFaq, FcCallback } from "react-icons/fc";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import './Contact.css'
+
+
 const Contact = () => {
+    const [submitted, setSubmitted] = useState(false);
+    const handleSubmit = () => {
+        setTimeout(() => {
+            setSubmitted(true);
+        }, 100);
+    };
+
+    if (submitted) {
+        return (
+            <>
+                <div className="text-2xl">Thank you!</div>
+                <div className="text-md">I'll be in touch soon.</div>
+            </>
+        );
+    }
     return (
         <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -53,20 +70,27 @@ const Contact = () => {
                 </div>
                 <div>
                     <div>
-                        <input type="text" placeholder="Your Name" className="input input-bordered w-full mt-5" />
-                        <input type="text" placeholder="Your Email" className="input input-bordered w-full mt-5" />
-                        <input type="text" placeholder="Enter Your Subject" className="input input-bordered w-full mt-5" />
-                        <textarea className="textarea textarea-bordered w-full mt-5" placeholder="Text Here"></textarea>
+                        <form
+                            action='https://public.herotofu.com/v1/01e4e570-7848-11ed-a126-b172cf164538'
+                            onSubmit={handleSubmit}
+                            method="POST"
+                            target="_blank"
+                        >
+                            <input type="text" placeholder="Your Name" required className="input input-bordered w-full mt-5" />
+                            <input type="text" placeholder="Your Email" required className="input input-bordered w-full mt-5" />
+                            <input type="text" placeholder="Enter Your Subject" required className="input input-bordered w-full mt-5" />
+                            <textarea className="textarea textarea-bordered w-full mt-5" required placeholder="Text Here"></textarea>
 
-                        <div id='btn' className='rounded-xl w-44 mt-5'>
-                            <button id='text'>
-                                <div className='flex items-center'>
-                                    <p className='mx-5'>Send Message</p>
-                                    <p className='bg-cyan-500 rounded-full '><HiArrowNarrowRight></HiArrowNarrowRight></p>
-                                </div>
+                            <div id='btn' className='rounded-xl w-44 mt-5'>
+                                <button id='text'>
+                                    <div className='flex items-center'>
+                                        <p className='mx-5'>Send Message</p>
+                                        <p className='bg-cyan-500 rounded-full '><HiArrowNarrowRight></HiArrowNarrowRight></p>
+                                    </div>
 
-                            </button>
-                        </div>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
