@@ -57,7 +57,7 @@ const Home = () => {
                             </button></Link>
                         </div>
                         <div id='btn' className='w-60 rounded-2xl mt-5 ml-0 md:ml-5 '>
-                            <a href='../../Assets/resume/Resume 01.pdf' download="Resume 01.pdf">
+                            <a href='../../Assets/resume/Resume-01.pdf' download="Resume-01.pdf">
 
                                 <button id='text' >
                                     <div className='flex items-center'>
