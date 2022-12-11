@@ -8,10 +8,10 @@ const HomeProject = () => {
     return (
         <div className='mt-20 pb-10'>
             <h1 className='flex justify-center text-4xl font-bold underline'>Projects</h1>
-           <div className='pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 border border-cyan-900 mt-10 p-5 rounded-2xl '>
+           <div className='pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:border border-cyan-900 mt-10 p-5 rounded-2xl '>
                 <motion.div initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }} className="hero border mt-20 shadow-2xl rounded-2xl ">
+                    viewport={{ once: true }} className="hero border md:mt-20 shadow-2xl rounded-2xl ">
                     <div className="hero-content flex-col">
                         <img src={photo1} className="h-72 rounded-lg" alt='' />
                         <div>
@@ -25,7 +25,7 @@ const HomeProject = () => {
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }} className="hero border mt-20 shadow-2xl rounded-2xl ">
+                    viewport={{ once: true }} className="hero border md:mt-20 shadow-2xl rounded-2xl ">
                     <div className="hero-content flex-col">
                         <img src={photo2} className="h-72 rounded-lg" alt='' />
                         <div>
@@ -39,7 +39,7 @@ const HomeProject = () => {
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }} className="hero border mt-20 shadow-2xl rounded-2xl ">
+                    viewport={{ once: true }} className="hero border md:mt-20 shadow-2xl rounded-2xl ">
                     <div className="hero-content flex-col">
                         <img src={photo3} className="h-72 rounded-lg" alt='' />
                         <div>
@@ -52,6 +52,7 @@ const HomeProject = () => {
                     </div>
                 </motion.div>
             </div>
+
         </div>
     );
 };

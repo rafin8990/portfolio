@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FcHome, FcAbout, FcList, FcContacts,FcIdea } from "react-icons/fc";
+import { FcHome, FcAbout, FcList, FcContacts,FcIdea,FcMediumPriority } from "react-icons/fc";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -29,6 +29,7 @@ const Navbar = () => {
                             <li ><Link to='/skill'><FcIdea></FcIdea> Skill</Link></li>
                             <li ><Link to='/project'><FcList></FcList>Project</Link></li>
                             <li ><Link to='/contact'><FcContacts></FcContacts>Contact</Link></li>
+                            <li ><Link to='/blog'><FcMediumPriority></FcMediumPriority>Blog</Link></li>
 
                         </ul>
                     </div>
@@ -41,6 +42,7 @@ const Navbar = () => {
                         <li ><Link to='/skill'><FcIdea></FcIdea> Skill</Link></li>
                         <li ><Link to='/project'><FcList></FcList>Project</Link></li>
                         <li ><Link to='/contact'><FcContacts></FcContacts>Contact</Link></li>
+                        <li ><Link to='/blog'><FcMediumPriority></FcMediumPriority>Blog</Link></li>
                     </ul>
                 </div>
                 <label  className="swap swap-rotate navbar-end">

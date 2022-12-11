@@ -8,6 +8,7 @@ import skill from '../../Assets/project/skillshop-academy.firebaseapp.com_.png'
 import penguin from '../../Assets/project/rafin8990.github.io_penguin-fashion_.png'
 import panda from '../../Assets/project/rafin8990.github.io_panda-comerce_.png'
 import digital from '../../Assets/project/rafin8990.github.io_Digital-learning_.png'
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
@@ -25,24 +26,29 @@ const Project = () => {
                         <div>
                             <img className=' w-4/5 rounded-lg shadow-2xl' src={image} alt="" />
                         </div>
-                        <div className=' absolute right-5 top-1/2 w-3/5 border-8 rounded-lg shadow-2xl'>
+                        <div className=' absolute right-5 top-1/3 w-3/5 border-8 rounded-lg shadow-2xl'>
                             <img className='' src={part} alt="" />
                         </div>
                     </div>
-                    <div className='mt-36 md:mt-0 lg:mx-20'>
+                    <div className='mt-36 md:mt-0 lg:mx-20 '>
                         <h1 className='font-bold'>Full Stack Photography Website</h1>
-                        <p>This is a MERN project . This is a professional photography website . Email and Password based authentication Added.
-                            A Social Authentication Added.
-                            Home page Have a banner section, a three service data , and 3 extra field added
-                            service route have 6 service data.
-                            Each service had a button, onclicking the button, the user see the service details and comment of these service . if the user is log in , he also see the add comment form otherwise he saw only comment.
-                            Navber has 3 public route and 3 private route.
-                            If a user doesn't log in , he can not get access to see the my review , add service and logout button.
-                            my Review routes each route have 2 button. delete and update . user can delete or update his/her review.
-                            update buttopn clicking the user redirect to the update page .here he can see the update form and update the dataa .
-                            Add service route contain a from where a valid user add a service .
-                            Route wise website name added
-                            clicking the photo , the picture is view in the big window . </p>
+                        <p>
+                           <li> This is a MERN project .</li>
+                           <li> This is a professional photography website .</li>
+                           <li> Email and Password based authentication Applied.</li>
+                           <li> A Social Authentication Applied.</li>
+                            <li>Home page have a banner section, a three service data , and 3 extra field added
+                            service route have 6 service data.</li>
+                           <li> Each service had a button, onclicking the button, the user see the service details and comment of these service . if the user is log in , he also see the add comment form otherwise he saw only comment.</li>
+                            <li>Navber has 3 public route and 3 private route.
+                            If a user doesn't log in , he can not get access to see the my review , add service and logout button.</li>
+                            <li>my Review routes each route have 2 button. delete and update . user can delete or update his/her review.</li>
+                            <li>update buttopn clicking the user redirect to the update page .here he can see the update form and update the dataa .</li>
+                            <li>Add service route contain a from where a valid user add a service .
+                            Route wise website name applied</li>
+                            <li>clicking the photo , the picture is view in the big window .</li>
+                            
+                             </p>
                         <h3 className='text-xl font-bold'>Technology Used :</h3>
                         <p>HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase</p>
                         <a href="https://exclusive-photography.firebaseapp.com/"> <button className='btn btn-sm mt-5'>Live link</button></a>
@@ -57,27 +63,22 @@ const Project = () => {
                     <figure><img src={doctor} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name: Doctors Portal</h2>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/doctors-portal-client"><button className="btn btn-sm">github client</button></a>
-                            <a href=" https://github.com/rafin8990/doctors-portal-server"><button className="btn btn-sm">Github Server</button></a>
-                            <a href="https://doctors-portal-349f1.firebaseapp.com/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+                        <Link to='/doctorsportal'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
+                       
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
                     <figure><img src={imajon} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name: Ema John</h2>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/ema-john-project-authentication"><button className="btn btn-sm">github client</button></a>
-                            <a href="https://ema-john-authentication-76f63.firebaseapp.com/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+                        <Link to='/emajohn'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
                     <figure><img src={skill} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name: Skillshop Academy</h2>
+                        <Link to='/skillshop'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
                         <div className="card-actions">
                             <a href=" https://github.com/rafin8990/skillshop-academy-client"><button className="btn btn-sm">github client</button></a>
                             <a href=" https://github.com/rafin8990/skillshop-academy-server"><button className="btn btn-sm">Github Server</button></a>
