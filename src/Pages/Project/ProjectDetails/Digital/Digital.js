@@ -1,18 +1,18 @@
 import React from 'react';
-import img1 from '../../../../../Doctors portal/Screenshot 2022-12-11 164704.jpg'
-import img2 from '../../../../../Doctors portal/Screenshot 2022-12-11 164757.jpg'
-import img3 from '../../../../../Doctors portal/Screenshot 2022-12-11 164852.jpg'
+import img1 from '../../../../Penguin Fashion/Screenshot 2022-12-11 235511.jpg'
+import img2 from '../../../../Penguin Fashion/Screenshot 2022-12-11 235526.jpg'
+import img3 from '../../../../Penguin Fashion/Screenshot 2022-12-11 235541.jpg'
 
-const DoctorsPortal = () => {
+const Digital = () => {
     return (
         <div>
             <div>
-                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/kDpVMc4/Screenshot-2022-12-11-164704.jpg")` }}>
+                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/x6DPQzg/Screenshot-2022-12-11-235526.jpg")` }}>
                     <div className="hero-overlay bg-opacity-80"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="bg-white p-10 rounded-xl">
-                            <h1 className="mb-5 text-4xl font-bold text-cyan-900">PROJECT NAME: DOCTORS PORTAL</h1>
-                            <p className="mb-5 text-cyan-900 text-xl">Teeth care website with dashboard layouts</p>
+                            <h1 className="mb-5 text-4xl font-bold text-cyan-900">PROJECT NAME: DIGITAL LEARNING</h1>
+                            <p className="mb-5 text-cyan-900 text-xl">Learnig course enrollment related website</p>
                         </div>
                     </div>
                 </div>
@@ -37,28 +37,22 @@ const DoctorsPortal = () => {
                 <div className='flex justify-center mt-10'>
                     <div className=' text-xl '>
                         <li>Resposive navbar with logo</li>
-                        <li>Product has its name and price and quality</li>
-                        <li> Each product has a button to buy these product</li>
+                        <li>Learning related course enrollment webpage</li>
+                        <li> Details About the course</li>
                         <li>Clicking to button product will added to the cart</li>
-                        <li> A person can not buy any product without login </li>
-                        <li>Google login feature Applied</li>
-                        <li>
-                            Technology Used :
-                            HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase
-                        </li>
+                        <li>Technology used: HTML , CSS, Tailwind CSS</li>
                     </div>
                 </div>
                 <div className='flex justify-center mt-10'>
                     <div className='md:flex justify-between w-1/3'>
-                        <h1 className='text-xl'>Start Date: 10/11/2022</h1>
-                        <h1 className='text-xl'>End Date: 24/11/2022</h1>
+                        <h1 className='text-xl'>Start Date: 10/07/2022</h1>
+                        <h1 className='text-xl'>End Date: 13/07/2022</h1>
                     </div>
                 </div>
                 <div className=" py-10 flex justify-center">
                     <div className="card-actions">
-                        <a href=" https://github.com/rafin8990/doctors-portal-client"><button className="btn btn-secondary">github client</button></a>
-                        <a href=" https://github.com/rafin8990/doctors-portal-server"><button className="btn btn-success">Github Server</button></a>
-                        <a href="https://doctors-portal-349f1.firebaseapp.com/"><button className="btn btn-primary">live link</button></a>
+                        <a href=" https://github.com/rafin8990/Digital-learning"><button className="btn btn-secondary">github client</button></a>
+                        <a href="https://rafin8990.github.io/Digital-learning/"><button className="btn btn-success">live link</button></a>
                     </div>
                 </div>
 
@@ -67,4 +61,4 @@ const DoctorsPortal = () => {
     );
 };
 
-export default DoctorsPortal;
+export default Digital;

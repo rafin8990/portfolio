@@ -33,27 +33,27 @@ const Project = () => {
                     <div className='mt-36 md:mt-0 lg:mx-20 '>
                         <h1 className='font-bold'>Full Stack Photography Website</h1>
                         <p>
-                           <li> This is a MERN project .</li>
-                           <li> This is a professional photography website .</li>
-                           <li> Email and Password based authentication Applied.</li>
-                           <li> A Social Authentication Applied.</li>
+                            <li> This is a MERN project .</li>
+                            <li> This is a professional photography website .</li>
+                            <li> Email and Password based authentication Applied.</li>
+                            <li> A Social Authentication Applied.</li>
                             <li>Home page have a banner section, a three service data , and 3 extra field added
-                            service route have 6 service data.</li>
-                           <li> Each service had a button, onclicking the button, the user see the service details and comment of these service . if the user is log in , he also see the add comment form otherwise he saw only comment.</li>
+                                service route have 6 service data.</li>
+                            <li> Each service had a button, onclicking the button, the user see the service details and comment of these service . if the user is log in , he also see the add comment form otherwise he saw only comment.</li>
                             <li>Navber has 3 public route and 3 private route.
-                            If a user doesn't log in , he can not get access to see the my review , add service and logout button.</li>
+                                If a user doesn't log in , he can not get access to see the my review , add service and logout button.</li>
                             <li>my Review routes each route have 2 button. delete and update . user can delete or update his/her review.</li>
                             <li>update buttopn clicking the user redirect to the update page .here he can see the update form and update the dataa .</li>
                             <li>Add service route contain a from where a valid user add a service .
-                            Route wise website name applied</li>
+                                Route wise website name applied</li>
                             <li>clicking the photo , the picture is view in the big window .</li>
-                            
-                             </p>
+
+                        </p>
                         <h3 className='text-xl font-bold'>Technology Used :</h3>
                         <p>HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase</p>
-                        <a href="https://exclusive-photography.firebaseapp.com/"> <button className='btn btn-sm mt-5'>Live link</button></a>
-                        <a href="https://github.com/rafin8990/exclusive-photography-client"> <button className='btn btn-sm mt-5'>Github Client</button></a>
-                        <a href="https://github.com/rafin8990/exclusive-photography-server"> <button className='btn btn-sm mt-5'>Github Server</button></a>
+                        <a href="https://exclusive-photography.firebaseapp.com/"> <button className='btn btn-sm btn-primary mt-5'>Live link</button></a>
+                        <a href="https://github.com/rafin8990/exclusive-photography-client"> <button className='btn btn-sm btn-secondary mt-5'>Github Client</button></a>
+                        <a href="https://github.com/rafin8990/exclusive-photography-server"> <button className='btn btn-sm btn-success mt-5'>Github Server</button></a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ const Project = () => {
                     <div className="card-body">
                         <h2 className="card-title">Name: Doctors Portal</h2>
                         <Link to='/doctorsportal'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
-                       
+
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
@@ -79,41 +79,31 @@ const Project = () => {
                     <div className="card-body">
                         <h2 className="card-title">Name: Skillshop Academy</h2>
                         <Link to='/skillshop'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/skillshop-academy-client"><button className="btn btn-sm">github client</button></a>
-                            <a href=" https://github.com/rafin8990/skillshop-academy-server"><button className="btn btn-sm">Github Server</button></a>
-                            <a href="https://skillshop-academy.firebaseapp.com/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
                     <figure><img src={penguin} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name: Penguin Fashion</h2>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/penguin-fashion"><button className="btn btn-sm">github client</button></a>
-                            <a href="https://rafin8990.github.io/penguin-fashion/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+                        <Link to='/panguin'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
+
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
                     <figure><img src={panda} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name:Panda Commerce</h2>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/panda-comerce"><button className="btn btn-sm">github client</button></a>
-                            <a href="https://rafin8990.github.io/panda-comerce/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+                        <Link to='/panda'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
+
                     </div>
                 </div>
                 <div className="card w-96 h-96 border border-cyan-900 shadow-xl">
                     <figure><img src={digital} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Name:Digital Learning</h2>
-                        <div className="card-actions">
-                            <a href=" https://github.com/rafin8990/Digital-learning"><button className="btn btn-sm">github client</button></a>
-                            <a href="https://rafin8990.github.io/Digital-learning/"><button className="btn btn-sm">live link</button></a>
-                        </div>
+                        <Link to='/digital'><button className='btn btn-sm btn-secondary'>View Details</button></Link>
+                       
                     </div>
                 </div>
             </div>

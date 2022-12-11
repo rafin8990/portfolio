@@ -42,6 +42,10 @@ const EmaJohn = () => {
                         <li>Clicking to button product will added to the cart</li>
                         <li> A person can not buy any product without login </li>
                         <li>Google login feature Applied</li>
+                        <li>
+                            Technology Used :
+                            HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase
+                        </li>
                     </div>
                 </div>
                 <div className='flex justify-center mt-10'>

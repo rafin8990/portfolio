@@ -7,7 +7,7 @@ const SkillShop = () => {
     return (
         <div>
             <div>
-                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/kDpVMc4/Screenshot-2022-12-11-164704.jpg")` }}>
+                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/7bNTXYr/Screenshot-2022-12-11-170141.jpg")` }}>
                     <div className="hero-overlay bg-opacity-80"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="bg-white p-10 rounded-xl">
@@ -42,6 +42,10 @@ const SkillShop = () => {
                         <li>Clicking to button product will added to the cart</li>
                         <li> A person can not buy any product without login </li>
                         <li>Google login feature Applied</li>
+                        <li>
+                            Technology Used :
+                            HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase
+                        </li>
                     </div>
                 </div>
                 <div className='flex justify-center mt-10'>
@@ -52,9 +56,9 @@ const SkillShop = () => {
                 </div>
                 <div className=" py-10 flex justify-center">
                     <div className="card-actions">
-                        <a href=" https://github.com/rafin8990/doctors-portal-client"><button className="btn btn-secondary">github client</button></a>
-                        <a href=" https://github.com/rafin8990/doctors-portal-server"><button className="btn btn-success">Github Server</button></a>
-                        <a href="https://doctors-portal-349f1.firebaseapp.com/"><button className="btn btn-primary">live link</button></a>
+                        <a href=" https://github.com/rafin8990/skillshop-academy-client"><button className="btn btn-primary">github client</button></a>
+                        <a href=" https://github.com/rafin8990/skillshop-academy-server"><button className="btn btn-secondary">Github Server</button></a>
+                        <a href="https://skillshop-academy.firebaseapp.com/"><button className="btn btn-success">live link</button></a>
                     </div>
                 </div>
 

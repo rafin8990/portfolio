@@ -1,18 +1,18 @@
 import React from 'react';
-import img1 from '../../../../../Doctors portal/Screenshot 2022-12-11 164704.jpg'
-import img2 from '../../../../../Doctors portal/Screenshot 2022-12-11 164757.jpg'
-import img3 from '../../../../../Doctors portal/Screenshot 2022-12-11 164852.jpg'
+import img1 from '../../../../Penguin Fashion/Screenshot 2022-12-11 234122.jpg'
+import img2 from '../../../../Penguin Fashion/Screenshot 2022-12-11 234203.jpg'
+import img3 from '../../../../Penguin Fashion/Screenshot 2022-12-11 234217.jpg'
 
-const DoctorsPortal = () => {
+const Panguin = () => {
     return (
         <div>
             <div>
-                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/kDpVMc4/Screenshot-2022-12-11-164704.jpg")` }}>
+                <div className="hero h-[400px]" style={{ backgroundImage: `url("https://i.ibb.co/2PwBS9T/Screenshot-2022-12-11-234122.jpg")` }}>
                     <div className="hero-overlay bg-opacity-80"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="bg-white p-10 rounded-xl">
-                            <h1 className="mb-5 text-4xl font-bold text-cyan-900">PROJECT NAME: DOCTORS PORTAL</h1>
-                            <p className="mb-5 text-cyan-900 text-xl">Teeth care website with dashboard layouts</p>
+                            <h1 className="mb-5 text-4xl font-bold text-cyan-900">PROJECT NAME: PANGUIN FASHION</h1>
+                            <p className="mb-5 text-cyan-900 text-xl">Fashion related different kind of product webpage</p>
                         </div>
                     </div>
                 </div>
@@ -39,13 +39,7 @@ const DoctorsPortal = () => {
                         <li>Resposive navbar with logo</li>
                         <li>Product has its name and price and quality</li>
                         <li> Each product has a button to buy these product</li>
-                        <li>Clicking to button product will added to the cart</li>
-                        <li> A person can not buy any product without login </li>
-                        <li>Google login feature Applied</li>
-                        <li>
-                            Technology Used :
-                            HTML, CSS, Tailwind,Daisy UI , React, React Router , Node JS,Express JS, MongoDB, Vercel,Firebase
-                        </li>
+                        <li>Technology used: HTML , CSS, Tailwind CSS</li>
                     </div>
                 </div>
                 <div className='flex justify-center mt-10'>
@@ -55,11 +49,10 @@ const DoctorsPortal = () => {
                     </div>
                 </div>
                 <div className=" py-10 flex justify-center">
-                    <div className="card-actions">
-                        <a href=" https://github.com/rafin8990/doctors-portal-client"><button className="btn btn-secondary">github client</button></a>
-                        <a href=" https://github.com/rafin8990/doctors-portal-server"><button className="btn btn-success">Github Server</button></a>
-                        <a href="https://doctors-portal-349f1.firebaseapp.com/"><button className="btn btn-primary">live link</button></a>
-                    </div>
+                <div className="card-actions">
+                            <a href=" https://github.com/rafin8990/penguin-fashion"><button className="btn btn-secondary">github client</button></a>
+                            <a href="https://rafin8990.github.io/penguin-fashion/"><button className="btn btn-success">live link</button></a>
+                        </div>
                 </div>
 
             </div>
@@ -67,4 +60,4 @@ const DoctorsPortal = () => {
     );
 };
 
-export default DoctorsPortal;
+export default Panguin;

@@ -5,8 +5,11 @@ import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import Project from "../Pages/Project/Project";
+import Digital from "../Pages/Project/ProjectDetails/Digital/Digital";
 import DoctorsPortal from "../Pages/Project/ProjectDetails/EmaJohn/DoctorsPortal/DoctorsPortal";
 import EmaJohn from "../Pages/Project/ProjectDetails/EmaJohn/EmaJohn";
+import Panda from "../Pages/Project/ProjectDetails/Panda/Panda";
+import Panguin from "../Pages/Project/ProjectDetails/Panguin/Panguin";
 import SkillShop from "../Pages/Project/ProjectDetails/SkillShop/SkillShop";
 import Skill from "../Pages/Skill/Skill";
 
@@ -50,6 +53,18 @@ export const router = createBrowserRouter([
             {
                 path:'/skillshop',
                 element:<SkillShop></SkillShop>
+            },
+            {
+                path:'/panguin',
+                element:<Panguin></Panguin>
+            },
+            {
+                path:'/panda',
+                element:<Panda></Panda>
+            },
+            {
+                path:'/digital',
+                element:<Digital></Digital>
             }
         ])
     }
