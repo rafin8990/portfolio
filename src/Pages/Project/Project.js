@@ -14,7 +14,7 @@ const Project = () => {
     return (
         <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 3 }} className='lg:mx-44 min-h-screen '>
+            transition={{ duration: 2 }} className='lg:mx-44 min-h-screen '>
             <h1 className='text-4xl font-bold text-center'>PROJECTS</h1>
             <div className='flex justify-center'>
                 <p className='text-xl text-center w-1/2'>My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.</p>

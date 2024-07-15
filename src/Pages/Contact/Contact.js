@@ -25,7 +25,7 @@ const Contact = () => {
     return (
         <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 3 }} className='lg:mx-44 min-h-screen '>
+            transition={{ duration: 2 }} className='lg:mx-44 min-h-screen '>
             <div>
                 <h1 className='text-4xl font-bold text-center'>GET IN TOUCH</h1>
             </div>
