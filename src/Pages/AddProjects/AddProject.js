@@ -95,7 +95,7 @@ const AddProject = () => {
                 <input
                     type="text"
                     name="startDate"
-                    placeholder="Start Date"
+                    placeholder="Start Date "
                     value={projectData.startDate}
                     onChange={handleInputChange}
                     required
