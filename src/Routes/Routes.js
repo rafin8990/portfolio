@@ -12,59 +12,64 @@ import Panda from "../Pages/Project/ProjectDetails/Panda/Panda";
 import Panguin from "../Pages/Project/ProjectDetails/Panguin/Panguin";
 import SkillShop from "../Pages/Project/ProjectDetails/SkillShop/SkillShop";
 import Skill from "../Pages/Skill/Skill";
+import AddProject from "../Pages/AddProjects/AddProject";
 
 export const router = createBrowserRouter([
     {
-        path:'/',
-        element:<Main></Main>,
-        children:([
+        path: '/',
+        element: <Main></Main>,
+        children: ([
             {
                 path: '/',
-                element:<Home></Home>
+                element: <Home></Home>
             },
             {
-                path:'/about',
-                element:<About></About>,
+                path: '/about',
+                element: <About></About>,
             },
             {
-                path:'/skill',
-                element:<Skill></Skill>
+                path: '/skill',
+                element: <Skill></Skill>
             },
             {
                 path: '/project',
-                element:<Project></Project>
+                element: <Project></Project>
             },
             {
-                path:'/contact',
-                element:<Contact></Contact>
+                path: '/contact',
+                element: <Contact></Contact>
             },
             {
-                path:'/blog',
-                element:<Blog></Blog>
+                path: '/blog',
+                element: <Blog></Blog>
             },
             {
-                path:'/emajohn',
-                element:<EmaJohn></EmaJohn>
+                path: '/add-project',
+                element: <AddProject></AddProject>
             },
             {
-                path:'/doctorsportal',
-                element:<DoctorsPortal></DoctorsPortal>
+                path: '/emajohn',
+                element: <EmaJohn></EmaJohn>
             },
             {
-                path:'/skillshop',
-                element:<SkillShop></SkillShop>
+                path: '/doctorsportal',
+                element: <DoctorsPortal></DoctorsPortal>
             },
             {
-                path:'/panguin',
-                element:<Panguin></Panguin>
+                path: '/skillshop',
+                element: <SkillShop></SkillShop>
             },
             {
-                path:'/panda',
-                element:<Panda></Panda>
+                path: '/panguin',
+                element: <Panguin></Panguin>
             },
             {
-                path:'/digital',
-                element:<Digital></Digital>
+                path: '/panda',
+                element: <Panda></Panda>
+            },
+            {
+                path: '/digital',
+                element: <Digital></Digital>
             }
         ])
     }
