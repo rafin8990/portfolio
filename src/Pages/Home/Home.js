@@ -7,7 +7,6 @@ import { HiArrowNarrowRight, HiMail, HiPhone, HiArrowCircleDown } from "react-ic
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
-import HomeProject from './HomeProject/HomeProject';
 import resume from '../../Assets/resume/Resume.pdf'
 
 const Home = () => {
@@ -81,7 +80,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <HomeProject></HomeProject>
         </motion.div>
 
 

@@ -7,6 +7,10 @@ const AddProject = () => {
         endDate: '',
         problemFaced: '',
         solution: '',
+        gitClient: '',
+        gitServer: '',
+        liveLink:'',
+        technology:'',
         imageLinks: [''],
         projectDetails: ['']
     });
@@ -54,13 +58,16 @@ const AddProject = () => {
                 throw new Error('Network response was not ok');
             }
 
-            // Assuming you want to reset the form after successful submission
             setProjectData({
                 projectName: '',
                 startDate: '',
                 endDate: '',
                 problemFaced: '',
                 solution: '',
+                gitClient: '',
+                gitServer: '',
+                liveLink:'',
+                technology:'',
                 imageLinks: [''],
                 projectDetails: ['']
             });
@@ -75,7 +82,6 @@ const AddProject = () => {
         <div className="max-w-2xl mx-auto p-6 min-h-screen rounded shadow-lg">
             <h1 className="text-2xl font-bold mb-6">Add Project</h1>
             <form onSubmit={handleSubmit}>
-                {/* Fixed fields */}
                 <input
                     type="text"
                     name="projectName"
@@ -87,29 +93,66 @@ const AddProject = () => {
                 />
                 <br />
                 <input
-                    type="date"
+                    type="text"
                     name="startDate"
+                    placeholder="Start Date"
                     value={projectData.startDate}
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
-                <br />
+                 <br />
                 <input
-                    type="date"
+                    type="text"
                     name="endDate"
+                    placeholder="End Date"
                     value={projectData.endDate}
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
+                <input
+                    type="text"
+                    name="gitClient"
+                    placeholder="Github Client"
+                    value={projectData.gitClient}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                />
+                <input
+                    type="text"
+                    name="gitServer"
+                    placeholder="Github Server"
+                    value={projectData.gitServer}
+                    onChange={handleInputChange}
+                  
+                    className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                />
+                <input
+                    type="text"
+                    name="liveLink"
+                    placeholder="live link"
+                    value={projectData.liveLink}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                />
+                <input
+                    type="text"
+                    name="technology"
+                    placeholder="Technology Used"
+                    value={projectData.technology}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                />
+               
                 <br />
                 <textarea
                     name="problemFaced"
                     placeholder="What problems did you face?"
                     value={projectData.problemFaced}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <br />
@@ -118,7 +161,6 @@ const AddProject = () => {
                     placeholder="How did you solve them?"
                     value={projectData.solution}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                 />
                 <br />
