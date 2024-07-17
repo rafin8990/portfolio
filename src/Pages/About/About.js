@@ -24,7 +24,7 @@ const About = () => {
                         <div className=' hidden md:flex justify-between '>
                             <div>
                                 <p><span className='text-xl font-bold'>First Name</span>: Rafin</p>
-                                <p><span className='text-xl font-bold'>Age</span>: 22</p>
+                                <p><span className='text-xl font-bold'>Age</span>: 24</p>
                                 <p><span className='text-xl font-bold'>Address</span>: Dhaka, Bangladesh</p>
                                 <p><span className='text-xl font-bold'>Github</span>: rafin8990</p>
 
